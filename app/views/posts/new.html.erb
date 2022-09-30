@@ -1,8 +1,10 @@
-<h1>New post</h1>
+<%= turbo_frame_tag "modal" do %>
+  <h1>New post</h1>
 
-<%= render "form", post: @post %>
+  <%= render "form", post: @post %>
 
-<br>
+  <br>
+<% end %>
 
 <div>
   <%= link_to "Back to posts", posts_path %>
